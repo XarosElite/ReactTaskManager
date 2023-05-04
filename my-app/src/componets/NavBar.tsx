@@ -10,9 +10,8 @@ export default function NavBar() {
     <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><a href="#">Tasks</a></li>
           <li><Link to="/projects">Projects</Link></li>
-          <li><a href="#">Settings</a></li>
+          <li><Link to="/settings">Settings</Link></li>
         </ul>
       </nav>
       <Outlet/>
