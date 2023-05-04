@@ -1,5 +1,6 @@
 import { SetStateAction, useState } from 'react';
 import TaskRowCard from './TaskRowCard';
+import Button from 'react-bootstrap/Button';
 
 export default function DashboardTaskView() {
   const [inputText, setInputText] = useState("");
@@ -23,7 +24,7 @@ export default function DashboardTaskView() {
       <div>{renderedTasks}</div>
 
       <input type='text' name='in' onChange={(e) => setInputText(e.target.value)}/>
-      <button onClick={handleClick}>Add task</button>
+      <Button variant="outline-dark" onClick={handleClick}>Add task</Button>
     </div>
   );
 }
